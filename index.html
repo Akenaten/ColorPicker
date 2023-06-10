@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <title>Color Picker</title>
+</head>
+
+<body>
+    <!-- TITLE CONTAINER -->
+    <div id = 'title'>
+        COLOR PICKER
+    </div>
+
+    <!-- PREVIEW WINDOW -->
+    <div class = "" >
+        <div id = "previewwindow">
+        </div>
+    </div>
+
+    <!-- HEX DISPLAY -->
+    <div class = "">
+        <div class = "option">
+            <i>
+                HEX
+            </i>
+
+            <i id = "hexValue">
+                VALUE
+            </i>
+
+            <i>
+                <button id ="hexButton">
+                    Button
+                </button>
+            </i>
+        </div>
+    </div>
+
+    <!-- RGB DISPLAY -->
+    <div class = "">
+        <div class = "option">
+            <i>
+                RGB
+            </i>
+
+            <i id = "rgbValue">
+                VALUE
+            </i>
+
+            <i>
+                <button id ="rgbButton">
+                    Button
+                </button>
+            </i>
+        </div>
+    </div>
+
+    <!-- INPUT AREA -->
+    <div class = "row inputArea">
+        <div  class = "col-4">
+            <label> R </label> <input placeholder="0" id = "rValue"> 
+            <input type="range" class = "form-range" id = "rRange" min = "0" max = "255">
+        </div>
+        <div class = "col-4">
+            <label> G </label> <input placeholder="0" id = "gValue"> 
+            <input type="range" class = "form-range" id = "gRange" min = "0" max = "255">
+        </div>
+        <div class = "col-4">
+            <label> B </label> <input placeholder="0" id = "bValue"> 
+            <input type="range" class = "form-range" id = "bRange" min = "0" max = "255">
+        </div>
+    </div>
+
+
+    
+</body>
+
+<script src = "main.js"></script>
+</html>
